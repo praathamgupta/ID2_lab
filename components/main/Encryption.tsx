@@ -48,7 +48,7 @@ const Encryption = () => {
          <p className="Flow-text text-[160px] font-bold">{data && data["feeds"][1]["field1"]}</p>
           <p>Total:</p>
           {/* Adjusting the style for the total value */}
-          <p className="Flow-text text-[160px] font-bold">{data && data.total}</p>
+       
         </div>
         
       </div>
