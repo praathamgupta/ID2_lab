@@ -41,7 +41,6 @@ const Encryption = () => {
 
 
       <div className="Welcome-box px-[250px] py-[40px] border my-[300px] border-[#7042f88b] opacity-[0.9]">
-        <h1 className="Welcome-text text-[12px]">{data && data.message}</h1>
       
         <div className="text-gray-300 mb-10">
           <p>Flow Rate:</p>
