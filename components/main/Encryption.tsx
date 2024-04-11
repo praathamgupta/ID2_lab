@@ -45,7 +45,7 @@ const Encryption = () => {
         <div className="text-gray-300 mb-10">
           <p>Flow Rate:</p>
           {/* Adjusting the style for the flow rate value */}
-          <p className="Flow-text text-[160px] font-bold">{data && data["feeds"][0][data["feeds"][0].length-1]}</p>
+         <p className="Flow-text text-[160px] font-bold">{data && data["feeds"][1]["field1"]}</p>
           <p>Total:</p>
           {/* Adjusting the style for the total value */}
           <p className="Flow-text text-[160px] font-bold">{data && data.total}</p>
