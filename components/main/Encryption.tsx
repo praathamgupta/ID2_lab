@@ -12,10 +12,10 @@ const Encryption = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("https://api.thingspeak.com/channels/2497564/feeds.json?api_key=QBSAOZVEIWG864Q7&results=2");
+        const response = await fetch("https://api.thingspeak.com/channels/2497564/feeds.json?api_key=QBSAOZVEIWG864Q7&results=1");
         const jsonData = await response.json();
         setData(jsonData);
-        // console.log(jsonData);
+        console.log(jsonData);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
@@ -45,8 +45,10 @@ const Encryption = () => {
         <div className="text-gray-300 mb-10">
           <p>Flow Rate:</p>
           {/* Adjusting the style for the flow rate value */}
-         <p className="Flow-text text-[160px] font-bold">{data && data["feeds"][1]["field1"]}</p>
-      
+          <p className="Flow-text text-[160px] font-bold">
+  {data && data["feeds"][0]["field1"] !== '' ? data["feeds"][0]["field1"] : 0}
+</p>
+
           {/* Adjusting the style for the total value */}
        
         </div>
